@@ -40,7 +40,7 @@ def N(y, t):
         0,
         0])
 
-# graphing the Poincare section
+# graphing Poincare section
 xs = sdeint.itoint(f, N, y0, tspan)
 x = [xs[samp_freq*i][0] for i in range(int(len(xs)/samp_freq))]
 y = [xs[samp_freq*i][1] for i in range(int(len(xs)/samp_freq))]
