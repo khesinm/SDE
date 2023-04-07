@@ -83,8 +83,8 @@ for i in range(len(total)):
 
 # plotting poincare sections
 
-x = [averages[0][i*T] for i in range(int(.20*len(averages[0])/2000), int(len(averages[0])/2000))]
-y = [averages[1][i*T] for i in range(int(.20*len(averages[1])/2000), int(len(averages[1])/2000))]
+x = [averages[0][i*2000] for i in range(int(.20*len(averages[0])/2000), int(len(averages[0])/2000))]
+y = [averages[1][i*2000] for i in range(int(.20*len(averages[1])/2000), int(len(averages[1])/2000))]
 
 plt.scatter(x, y, s=.4)
 plt.xlabel("x")
